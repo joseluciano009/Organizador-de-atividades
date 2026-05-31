@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Atividades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organizador de Atividades Escolares</h1>
+        <form id="activityForm">
+            <label for="subject">Matéria:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="professor">Professor:</label>
+            <input type="text" id="professor" name="professor" required>
+
+            <label for="dueDate">Data de Entrega:</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+            
+           <label for="description">Descrição:</label>
+           <input type="text" id="description" name="description" required>
+
+            <button type="submit">Adicionar Atividade</button>
+        </form>
+
+        <div class="activities" id="activitiesList">
+            <!-- Atividades serão exibidas aqui -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
